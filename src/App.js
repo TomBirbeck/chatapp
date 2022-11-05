@@ -1,4 +1,4 @@
-import { ChatEngine } from 'react-chat-engine'
+import { ChatEngine } from 'react-chat-engine';
 import ChatFeed from './components/ChatFeed';
 
 import './App.css';
@@ -10,7 +10,7 @@ function App() {
       publicKey={process.env.REACT_APP_PROJECT_ID}
       userName={'Tom'}
       userSecret={'lordy159!'}
-      renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps}/>}
+      renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
     />
   );
 }
