@@ -1,4 +1,3 @@
-// import { PeopleSettings } from "react-chat-engine"
 import MessageForm from './MessageForm';
 import MyMessage from './MyMessage';
 import TheirMessage from './TheirMessage';
@@ -33,7 +32,7 @@ const ChatFeed = (props) => {
       const isMyMessage = userName === message.sender.username;
 
       return (
-        <div key={`mes_${index}`} style={{ width: '100%' }}>
+        <div key={`msg_${index}`} style={{ width: '100%' }}>
           <div className='message-block'>
             {isMyMessage ? (
               <MyMessage message={message} />
@@ -59,6 +58,7 @@ const ChatFeed = (props) => {
   };
 
   if (!chat) return 'Loading...';
+
   return (
     <div className='chat-feed'>
       <div className='chat-title-container'>
